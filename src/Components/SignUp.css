@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e8f0fe; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the forms */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Form Header */
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Input Fields */
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #4c6ef5; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(76, 110, 245, 0.2);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #4c6ef5; /* Blue button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3a5bc7; /* Darker blue on hover */
+  }
+  
+  /* Error Handling Text */
+  .error-text {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  /* Link Styling */
+  a {
+    color: #4c6ef5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 500px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .card-body {
+      padding: 30px;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="number"] {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+  
